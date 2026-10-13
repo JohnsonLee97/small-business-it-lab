@@ -80,3 +80,19 @@ Checks approximately every 30 seconds and saves results to
 logs/health-check.log. Press Ctrl+C to stop.
 
 Test results: docs/monitoring-test.md
+
+## Background Monitoring
+
+Monitoring runs through the website-monitor systemd service.
+
+Check status:
+systemctl is-active website-monitor
+
+Stop monitoring:
+sudo systemctl stop website-monitor
+
+Start monitoring:
+sudo systemctl start website-monitor
+
+Monitoring stops when WSL shuts down and starts again
+when Ubuntu boots because the service is enabled.
