@@ -32,3 +32,10 @@ Generated logs are excluded from Git.
 Monitoring runs only while the script and WSL are running.
 HTTP 200 confirms a successful response, but does not verify
 that all webpage content is correct.
+
+## Background Service Test
+
+Before the outage, website-monitor was active.
+Stopped Nginx and confirmed a new DOWN entry in the log.
+Started Nginx and confirmed a new UP entry in the log.
+The monitoring service remained active throughout the test.
