@@ -71,3 +71,12 @@ Save changes to website/index.html, then run:
 
 The script checks the Nginx configuration, backs up the existing
 website, deploys the homepage and checks the HTTP response.
+
+## Monitor Website Availability
+
+    bash scripts/monitor.sh
+
+Checks approximately every 30 seconds and saves results to
+logs/health-check.log. Press Ctrl+C to stop.
+
+Test results: docs/monitoring-test.md
