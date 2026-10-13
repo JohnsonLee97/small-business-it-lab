@@ -62,3 +62,12 @@ Backups are saved in backups/ and excluded from Git.
 This is a local learning lab.
 Backups stored on the same computer do not protect against
 computer or disk failure.
+
+## Deploy Homepage Updates
+
+Save changes to website/index.html, then run:
+
+    bash scripts/deploy.sh
+
+The script checks the Nginx configuration, backs up the existing
+website, deploys the homepage and checks the HTTP response.
