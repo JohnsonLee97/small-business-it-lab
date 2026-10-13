@@ -1,0 +1,14 @@
+[Unit]
+Description=Small Business Website Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=ljw_97
+WorkingDirectory=/home/ljw_97/projects/small-business-it-lab
+ExecStart=/usr/bin/bash /home/ljw_97/projects/small-business-it-lab/scripts/monitor.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
